@@ -1,0 +1,162 @@
+body{
+    margin: 0 auto;
+    background: #eee
+}
+#wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+header{
+    grid-column: 1 / 13;
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(135deg, #120000, #300000 60%, #120000 80%, #000);
+    color:  rgb(197, 153, 73);
+}
+
+header p{
+    position: fixed;
+    top: 0;
+    right: 2%;
+    border: 5px solid;
+    padding: 4px;
+    background-image: linear-gradient(115deg, #100000, #300000 60%, #120000 80%, #000);
+    color:  rgb(197, 153, 73);
+    z-index: 1;
+}
+nav{
+    grid-column: 1 / 13;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    color:  rgb(197, 153, 73);
+    background: rgba(20,0, 0, 0.9);
+    padding: 5px;
+     border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    visibility: hidden;
+    z-index: 0.9;
+}
+nav div{
+    background: #120000;
+    height: 350px;
+    color:  rgb(197, 153, 73);
+    padding: 5px
+}
+nav img{
+    float: left;
+}
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    position: fixed;
+    top: 50px;
+    right: 5px;
+    background: #eee;
+    visibility: ;
+}
+nav ul li{
+    display: ;
+    position: relative;
+    top: ;
+    width: 100%;
+    margin: 7px;
+    padding: 5px;
+    border: 2px solid;
+    background-image: linear-gradient(115deg, #100000, #300000 60%, #120000 80%, #000);
+    color:  rgb(197, 153, 73);
+}
+
+nav li a{
+    color:  rgb(197, 153, 73);
+    text-decoration: none
+}
+main{
+    position: ;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+}
+main h2{
+    background-image: linear-gradient(135deg, #120000, #300000 60%, #120000);
+    color:  rgb(197, 153, 73);
+    
+}
+main form{
+    margin: 0 5px 5px;
+    display: inline;
+}
+main input{
+    width: 100px;
+    height: 25px;
+    margin: 0 0px 5px 0;
+}
+main button{
+    height: 35px;
+    position: ;
+    margin: 0 2px;
+    border: 0
+}
+main button img{
+    height: 30px;
+    top: 10px;
+}
+main ul{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid;
+}
+main ul li{
+    width: 40%;
+    border: 2px solid;
+    margin: 3% 5% 3% 0;
+    float: left;
+    list-style-type: none;
+    height: 100px;
+}
+ads{
+    grid-column: 1 / 13;
+    border: 2px solid;
+    width: 100%
+}
+aside{
+    grid-column: 1 / 13;
+    border: 2px solid;
+    width: 95%;
+}
+aside ul{
+    width: 100%;
+}
+aside ul li{
+    width: 20%;
+    border: 2px solid;
+    margin: 3% 5% 3% 0;
+    float: left;
+    list-style-type: none;
+    height: 100px;
+}
+more{
+    grid-column: 1 / 13;
+    border: 2px solid;
+}
+footer{ 
+    grid-column: 1 / 13;
+    max-width: 100%;
+    background-image: linear-gradient(-9deg, #120000 25%, #abb1b1 27%, #120000 30%, #34231f 70%, #c8cdcb 72%, #d2a15a);
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 0;
+    color: rgb(197, 153, 73);
+}
+footer a{
+    text-decoration: none;
+    color: rgb(230, 204, 134);
+}

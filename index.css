@@ -1,0 +1,405 @@
+body{
+    color: ;
+    font-family: 'Nunito Semibold';
+    text-align: center;
+    margin: 0;
+   
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 5px;
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    bottom: 5px;
+    background: #eee;
+}
+
+/* head tags */
+#header{
+    grid-column: 1 / 13;
+    max-width: 100%;
+    height: 75%;
+    background-image: linear-gradient(135deg, #120000, #300000 60%);
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 5px solid rgb(210, 160, 90);
+    border-color: rgb(210, 160, 90);
+    color:  rgb(197, 153, 73);
+    
+}
+#header h1{
+    font-family: 'Lobster', cursive;
+    font-size: 200%;
+    position: relative;
+    color: rgb(210, 160, 90);
+}
+#header h3{
+    font-family: 'Lobster', cursive;
+    position: relative;
+    font-weight: 100;
+    bottom: 30px;
+    color: rgb(230, 204, 134);
+    
+}
+#header a{
+    float: right;
+    position: relative;
+    top: 2.5%;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 3px;
+    margin: 0.5%;
+    text-decoration: none;
+    font-size: 0.8em;
+    color: rgb(52, 35, 30);
+    background: rgb(230, 204, 134);
+}
+
+#burger-container{
+    position: absolute;
+    margin: 2px 10px;
+    width: 30px;
+    bottom: -49px;
+    left: 5px;
+    border: 2px outset rgba(230, 204, 134, 0.5) ;
+}
+#burger{
+    cursor: ;
+    display: block;
+}
+#burger span{
+    background: rgb(230, 204, 134);
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out 0.4s;
+    color:  ;
+}
+#burger-container.open span:nth-child(2),
+#burger-container.open span:nth-child(3){
+    width: 0;
+    opacity: 0;
+}
+#burger-container.open span:nth-child(4){
+    transform: rotate(45deg);
+    top: -15px;
+}
+#burger-container.open span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 15px;
+}
+
+
+
+/* store tag */
+#store{
+    grid-column: 1 / 13;
+    border-top: 5px solid rgb(52, 35, 30);
+    background-image: linear-gradient(-9deg, #120000 25%, #abb1b1 27%, #120000 30%, #34231f 70%, #c8cdcb 72%, #d2a15a);
+}
+#store section{
+    width: 35%;
+    height: 100px;
+    float: left;
+    margin: 5% 5%;
+    padding: 5px;
+    background: rgba(46,0,0,0.5);
+    border: 1px solid rgb(210, 160, 90);
+    border-radius: 30px
+}
+#store section a{
+    text-decoration: none;
+    color: rgb(210, 160, 90);
+}
+#store img{
+    width: 110px;
+    position: relative;
+    bottom: 80px;
+}
+#store section p{
+    position: relative;
+    top: 60px;
+    background: rgba(197, 153, 73, 1);
+    border: 1px solid rgb(210, 160, 90);
+    border-radius: 20px; 
+    color: rgb(52, 35, 30);
+    z-index: 1;
+}
+
+
+/* ads tag */
+#ads{
+    grid-column: 1 / 13;
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+    background: #eee;
+    border-top: 5px solid rgb(210, 160, 90);
+    border-bottom: 5px solid rgb(210, 160, 90);
+    padding: 5px 0;
+    
+}
+.rslidesA {
+    grid-column: 3 / 7;
+    grid-row: 1 / 4;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgb(52, 35, 30);
+  }
+.rslidesA li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.rslidesA li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+.rslidesA img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 95%;
+    border: 0;
+    margin: 0 auto;
+}
+
+.rslidesB {
+    grid-column: 3 / 7;
+    grid-row: 4 / 6;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgb(52, 35, 30);
+  }
+.rslidesB li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.rslidesB li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+.rslidesB img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 95%;
+    border: 0;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.rslidesC {
+    grid-column: 7 / 11;
+    grid-row: 1 / 6;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 2px solid rgb(52, 35, 30);
+  }
+.rslidesC li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.rslidesC li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+.rslidesC img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 95%;
+    border: 0;
+    margin: 5px auto;
+}
+
+shop{
+    grid-column: 1 / 13
+    
+}
+shop ul{
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid #120000;
+}
+shop ul li{
+    position: relative;
+    right: 4%;
+    width: 45%;
+    height: 150px;
+    border: 2px solid;
+    margin: 5px 10px 5px 0;
+    float: left;
+    list-style-type: none;
+    background: #120000;
+}
+
+/* blog tags*/
+#blog{
+    grid-column: 1 / 13;
+    background-image: linear-gradient(180deg, #120000, #490000, #300000 60%, #510f00 80%);
+    border-top: 5px solid rgb(52, 35, 30);
+}
+#blog h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 200%;
+    text-align: left;
+    color: rgb(210, 160, 90);
+    margin: 10px auto;
+    width: 60%;
+    position: relative;
+    right: 15%;
+}
+#blog ul{
+    list-style-type: none;
+    border-top: 5px solid rgb(52, 35, 30);
+    text-align: left;
+    margin: 0 auto;
+    background: #eee;
+    color: rgb(32, 15, 20);
+}
+#blog ul li{
+    width: 100%;
+    position: relative;
+    right: 23px;
+    margin: 5px 2px 5px 0;
+    padding: 5px;
+    border: 5px solid rgb(52, 35, 30);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgba(210, 160, 90, 0.7)
+}
+#blog img{
+    float: left;
+    margin: 5px 5px;
+    border: 2px solid ;
+    width: 25%;
+    height: 100px;
+    overflow: hidden;
+    
+}
+#sidenote{
+    width: 70%;
+    margin: 5px auto;
+    position: absolute;
+    top: -15px;
+    left: 30%
+}
+#sidenote h4{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Special Elite', cursive;
+}
+#sidenote img{
+    border: 0;
+    width: 25px;
+    position: relative;
+    bottom: 60px;
+    left: 5px;
+}
+#sidenote p{
+    line-height: 5px;
+    font-family: 'Yeon Sung', cursive;
+    position: relative;
+    left: 3%;
+    bottom: 10px;
+    line-height: 13px
+}
+#info{
+    clear: both
+}
+#info h3{
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 90%;
+}
+#info p{
+    font-family: 'Cabin', sans-serif;
+    position: relative;
+    margin: 10px auto;
+    padding: 5px
+}
+
+/* more tag */
+#more{
+    grid-column: 1 / 13;
+    text-align: left;
+}
+#more h1{
+    margin: 0;
+    color: rgb(197, 153, 73);
+    text-align: center;
+    background-image: linear-gradient(-9deg, #120000 25%, #abb1b1 27%, #120000 30%, #34231f 70%, #c8cdcb 72%, #d2a15a);
+}
+#more ul{
+    width: 95%;
+    position: relative;
+    right: 10px;
+    margin: 5px auto;
+    list-style-type: none;
+}
+#more ul li{
+    width: 100%;
+    position: relative;
+    right: 23px;
+    border-top: 5px double rgb(52, 35, 30);
+    margin: 5px 0;
+    padding: 5px;
+    background: rgb(210, 160, 90)
+}
+
+/* more tag */
+#footer{
+    grid-column: 1 / 13;
+    max-width: 100%;
+    height: 85%;
+    background-image: linear-gradient(-9deg, #120000 25%, #abb1b1 27%, #120000 30%, #34231f 70%, #c8cdcb 72%, #d2a15a);
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 0;
+    color: rgb(197, 153, 73);
+}
+#footer a{
+    text-decoration: none;
+    color: rgb(230, 204, 134);
+}
+
+
